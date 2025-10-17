@@ -23,7 +23,7 @@ export default function Home() {
 				<div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
 					{/* Left Column */}
 					<div className="flex flex-col justify-center">
-						<h1 className="font-serif font-medium text-[48px] leading-[71px] tracking-[0px] text-left text-[rgba(40,40,40,1)] mb-6">
+						<h1 className="font-serif font-medium text-[32px] leading-[48px] sm:text-[40px] sm:leading-[60px] lg:text-[48px] lg:leading-[71px] tracking-[0px] text-left text-[rgba(40,40,40,1)] mb-6">
 							Menghubungkan Pasar Global Melalui Perdagangan Berkualitas
 						</h1>
 						<p className="font-sans font-normal text-[20px] leading-[150%] tracking-[0px] text-left text-[rgba(102,102,102,1)] mb-8">
@@ -51,10 +51,13 @@ export default function Home() {
 					<span className="inline-block rounded-full bg-blue-100 text-blue-700 px-4 py-1 text-sm font-medium">
 						Layanan Kami
 					</span>
-					<h2 className="mt-6 font-serif font-medium text-[40px] leading-[150%] tracking-[0px] text-black">
+					<h2 className="mt-6 font-serif font-medium text-[28px] leading-[150%] sm:text-[32px] lg:text-[40px] tracking-[0px] text-black">
 						Mendukung Perdagangan Global <br />
 						Melalui Layanan yang Andal
 					</h2>
+					<h3 className="mt-4 font-serif font-medium text-[24px] leading-[150%] sm:text-[28px] lg:text-[32px] tracking-[0px] text-black">
+						Solusi Terpercaya untuk Bisnis Anda
+					</h3>
 					<p className="mt-6 font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(102,102,102,1)]">
 						Kami menjembatani produsen dan pembeli di seluruh dunia <br />
 						melalui layanan perdagangan yang tepercaya dan transparan.
@@ -213,7 +216,7 @@ export default function Home() {
 							className="mx-auto h-10 w-auto"
 						/>
 					</div>
-					<h2 className="mt-10 font-serif font-medium text-[40px] leading-[150%] tracking-[0px] text-white">
+					<h2 className="mt-10 font-serif font-medium text-[28px] leading-[150%] sm:text-[32px] lg:text-[40px] tracking-[0px] text-white">
 						Mari Bangun Koneksi Global Bersama
 					</h2>
 					<p className="mt-6 font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-white">
