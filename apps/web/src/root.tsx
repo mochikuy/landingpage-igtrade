@@ -26,6 +26,7 @@ import { Footer } from "./components/footer";
 import { WhatsAppFloat } from "./components/whatsapp-float";
 
 export const links: Route.LinksFunction = () => [
+	{ rel: "icon", href: "/infinity-globalindo-logo.svg", type: "image/svg+xml" },
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
 	{
 		rel: "preconnect",

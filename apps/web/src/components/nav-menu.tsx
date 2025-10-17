@@ -24,25 +24,25 @@ import {
             {/* <div className="rounded-2xl border bg-white p-4 shadow-md min-w-72"> */}
               <ul className="grid gap-2">
                 <li>
-                  <NavLink to="#" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
+                  <NavLink to="/coming-soon" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
                     <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-gray-100 text-blue-600 text-sm font-medium">1</span>
                     <span className="text-black">Safety Box</span>
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="#" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
+                  <NavLink to="/coming-soon" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
                     <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-gray-100 text-blue-600 text-sm font-medium">2</span>
                     <span className="text-black">Financial Tools</span>
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="#" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
+                  <NavLink to="/coming-soon" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
                     <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-gray-100 text-blue-600 text-sm font-medium">3</span>
                     <span className="text-black">Pneumatic</span>
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="#" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
+                  <NavLink to="/coming-soon" className="flex items-center gap-3 rounded-xl px-3 py-2 hover:bg-blue-50">
                     <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-gray-100 text-blue-600 text-sm font-medium">4</span>
                     <span className="text-black">Padel Racket</span>
                   </NavLink>

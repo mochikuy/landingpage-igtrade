@@ -1,6 +1,7 @@
 export const WhatsAppFloat = () => {
   const whatsappNumber = "6287775559883"; // +62 877-7555-9883
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+  const message = "Halo, saya tertarik dengan produk/layanan IGTrade. Mohon info lebih lanjut ya.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <a
