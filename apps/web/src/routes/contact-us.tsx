@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -105,7 +106,13 @@ ${formData.message}
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-26 lg:gap-12">
             {/* Contact Form */}
-            <div className="text-left sm:text-center lg:text-left">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="text-left sm:text-center lg:text-left"
+            >
               <h2 className="font-serif font-medium text-[20px] leading-[150%] sm:text-[24px] md:text-[28px] lg:text-[32px] tracking-[0px] text-[rgba(40,40,40,1)] mb-4 sm:mb-6">
                 Kirim Pesan
               </h2>
@@ -264,10 +271,16 @@ ${formData.message}
                   </p>
                 )}
               </form>
-            </div>
+            </motion.div>
 
             {/* Contact Information */}
-            <div className="text-left sm:text-center md:text-center lg:text-left">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="text-left sm:text-center md:text-center lg:text-left"
+            >
               <h2 className="font-serif font-medium text-[20px] leading-[150%] sm:text-[24px] md:text-[28px] lg:text-[32px] tracking-[0px] text-[rgba(40,40,40,1)] mb-4 sm:mb-6">
                 Informasi Kontak
               </h2>
@@ -414,7 +427,7 @@ ${formData.message}
                   Chat via WhatsApp
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

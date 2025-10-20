@@ -3,6 +3,9 @@
   "workspaces": {
     "": {
       "name": "infinity-globalindo",
+      "dependencies": {
+        "framer-motion": "^12.23.24",
+      },
     },
     "apps/web": {
       "name": "web",

@@ -2,6 +2,7 @@ import type { Route } from "./+types/about";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
 import { Separator } from "@/components/ui/separator";
+import { motion } from "framer-motion";
 
 export function meta({}: Route.MetaArgs) {
 	return [
@@ -99,7 +100,13 @@ menyediakan layanan impor-ekspor hardware terbaik.
 					</h1>
 					<div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 						{/* Column 1 */}
-						<div className="text-left sm:text-center">
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, delay: 0 }}
+							viewport={{ once: true, amount: 0.3 }}
+							className="text-left sm:text-center"
+						>
 							<img src="/integritas.svg" alt="Kualitas" className="h-16 w-16 mb-6 sm:mx-auto" />
 							<h3 className="font-sans font-medium text-[20px] leading-[150%] tracking-[0px] text-[rgba(40,40,40,1)] mb-4">
 								Integritas
@@ -107,10 +114,16 @@ menyediakan layanan impor-ekspor hardware terbaik.
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
                                 Membangun kepercayaan, kejujuran dan transparansi
 							</p>
-						</div>
+						</motion.div>
 
 						{/* Column 2 */}
-						<div className="text-left sm:text-center">
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, delay: 0.1 }}
+							viewport={{ once: true, amount: 0.3 }}
+							className="text-left sm:text-center"
+						>
 							<img src="/efisien.svg" alt="Keandalan" className="h-16 w-16 mb-6 sm:mx-auto" />
 							<h3 className="font-sans font-medium text-[20px] leading-[150%] tracking-[0px] text-[rgba(40,40,40,1)] mb-4">
 								Efisiensi
@@ -118,10 +131,16 @@ menyediakan layanan impor-ekspor hardware terbaik.
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
                                 Proses pengiriman yang tepat waktu dan setiap waktu.
 							</p>
-						</div>
+						</motion.div>
 
 						{/* Column 3 */}
-						<div className="text-left sm:text-center">
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, delay: 0.2 }}
+							viewport={{ once: true, amount: 0.3 }}
+							className="text-left sm:text-center"
+						>
 							<img src="/inovasi.svg" alt="Inovasi" className="h-16 w-16 mb-6 sm:mx-auto" />
 							<h3 className="font-sans font-medium text-[20px] leading-[150%] tracking-[0px] text-[rgba(40,40,40,1)] mb-4">
 								Inovasi
@@ -129,10 +148,16 @@ menyediakan layanan impor-ekspor hardware terbaik.
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
                                 Terus berkembang untuk memenuhi standar global.
 							</p>
-						</div>
+						</motion.div>
 
 						{/* Column 4 */}
-						<div className="text-left sm:text-center">
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, delay: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
+							className="text-left sm:text-center"
+						>
 							<img src="/kemitraan.svg" alt="Kemitraan" className="h-16 w-16 mb-6 sm:mx-auto" />
 							<h3 className="font-sans font-medium text-[20px] leading-[150%] tracking-[0px] text-[rgba(40,40,40,1)] mb-4">
 								Kemitraan
@@ -140,7 +165,7 @@ menyediakan layanan impor-ekspor hardware terbaik.
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
                                 Sukses melalui kolaborasi dan pertumbuhan bersama.
 							</p>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 
@@ -151,7 +176,11 @@ menyediakan layanan impor-ekspor hardware terbaik.
 
 			{/* CTA Section */}
 			<section className="mt-[100px] px-4">
-				<div
+                <motion.div
+					initial={{ opacity: 0, scale: 0.95 }}
+					whileInView={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.6, ease: "easeOut" }}
+					viewport={{ once: true, amount: 0.2 }}
 					className="mx-auto max-w-6xl rounded-3xl px-6 py-6 text-left sm:text-center"
 					style={{ backgroundColor: "rgba(29, 152, 196, 1)" }}
 				>
@@ -179,7 +208,7 @@ menyediakan layanan impor-ekspor hardware terbaik.
 						</a>
 					</div>
 					<div className="pb-4 sm:pb-16" />
-				</div>
+				</motion.div>
 			</section>
 		</div>
 	);

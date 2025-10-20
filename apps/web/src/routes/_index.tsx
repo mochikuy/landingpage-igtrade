@@ -1,5 +1,6 @@
 import type { Route } from "./+types/_index";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export function meta({}: Route.MetaArgs) {
 	return [
@@ -54,17 +55,24 @@ export default function Home() {
 					}}>
 						Layanan Kami
 					</span>
-					<h2 className="mt-6 font-serif font-medium text-[28px] leading-[150%] sm:text-[32px] lg:text-[40px] tracking-[0px] text-black">
-						Mendukung Perdagangan Global <br style={{ display: 'none' }} className="sm:inline" />
-						Melalui Layanan yang Andal
-					</h2>
-					<h3 className="mt-4 font-serif font-medium text-[24px] leading-[150%] sm:text-[28px] lg:text-[32px] tracking-[0px] text-black">
-						Solusi Terpercaya untuk Bisnis Anda
-					</h3>
-					<p className="mt-6 font-sans font-normal text-[16px] sm:text-[18px] leading-[150%] tracking-[0px] text-[rgba(102,102,102,1)]">
-						Kami menjembatani produsen dan pembeli di seluruh dunia <br style={{ display: 'none' }} className="sm:inline" />
-						melalui layanan perdagangan yang tepercaya dan transparan.
-					</p>
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.6, ease: "easeOut" }}
+						viewport={{ once: true, amount: 0.3 }}
+					>
+						<h2 className="mt-6 font-serif font-medium text-[28px] leading-[150%] sm:text-[32px] lg:text-[40px] tracking-[0px] text-black">
+							Mendukung Perdagangan Global <br style={{ display: 'none' }} className="sm:inline" />
+							Melalui Layanan yang Andal
+						</h2>
+						<h3 className="mt-4 font-serif font-medium text-[24px] leading-[150%] sm:text-[28px] lg:text-[32px] tracking-[0px] text-black">
+							Solusi Terpercaya untuk Bisnis Anda
+						</h3>
+						<p className="mt-6 font-sans font-normal text-[16px] sm:text-[18px] leading-[150%] tracking-[0px] text-[rgba(102,102,102,1)]">
+							Kami menjembatani produsen dan pembeli di seluruh dunia <br style={{ display: 'none' }} className="sm:inline" />
+							melalui layanan perdagangan yang tepercaya dan transparan.
+						</p>
+					</motion.div>
 				</div>
 			</section>
 
@@ -164,7 +172,13 @@ export default function Home() {
 			<section className="mt-12 px-4">
 				<div className="max-w-6xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
 					{/* Card 1 */}
-					<div className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm">
+					<motion.div
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.6, delay: 0 }}
+						viewport={{ once: true, amount: 0.2 }}
+						className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm"
+					>
 						<img src="/safety-box.svg" alt="Safety Box & Security" className="h-24 w-24 object-contain sm:mx-auto" />
 						<h3 className="mt-6 font-sans text-2xl font-semibold text-[rgba(40,40,40,1)]">Safety Box & Security Equipment</h3>
 						<p className="mt-4 font-sans text-base font-normal leading-[150%] text-[rgba(136,136,136,1)]">
@@ -173,10 +187,16 @@ export default function Home() {
 						<div className="mt-6">
 							<Button variant="outline" className="!text-black !border-gray-300 hover:!bg-gray-100 hover:!text-black !bg-white">Detail Produk</Button>
 						</div>
-					</div>
+					</motion.div>
 
 					{/* Card 2 */}
-					<div className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm">
+					<motion.div
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.6, delay: 0.1 }}
+						viewport={{ once: true, amount: 0.2 }}
+						className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm"
+					>
 						<img src="/padel-tennis.svg" alt="Padel & Sports" className="h-24 w-24 object-contain sm:mx-auto" />
 						<h3 className="mt-6 font-sans text-2xl font-semibold text-[rgba(40,40,40,1)]">Padel Tennis Racket & Sports Equipment</h3>
 						<p className="mt-4 font-sans text-base font-normal leading-[150%] text-[rgba(136,136,136,1)]">
@@ -185,10 +205,16 @@ export default function Home() {
 						<div className="mt-6">
 							<Button variant="outline" className="!text-black !border-gray-300 hover:!bg-gray-100 hover:!text-black !bg-white">Detail Produk</Button>
 						</div>
-					</div>
+					</motion.div>
 
 					{/* Card 3 */}
-					<div className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm">
+					<motion.div
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.6, delay: 0.2 }}
+						viewport={{ once: true, amount: 0.2 }}
+						className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm"
+					>
 						<img src="/pneumatic.svg" alt="Pneumatic & Industrial" className="h-24 w-24 object-contain sm:mx-auto" />
 						<h3 className="mt-6 font-sans text-2xl font-semibold text-[rgba(40,40,40,1)]">Pneumatic & Industrial Components</h3>
 						<p className="mt-4 font-sans text-base font-normal leading-[150%] text-[rgba(136,136,136,1)]">
@@ -197,10 +223,16 @@ export default function Home() {
 						<div className="mt-6">
 							<Button variant="outline" className="!text-black !border-gray-300 hover:!bg-gray-100 hover:!text-black !bg-white">Detail Produk</Button>
 						</div>
-					</div>
+					</motion.div>
 
 					{/* Card 4 */}
-					<div className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm">
+					<motion.div
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.6, delay: 0.3 }}
+						viewport={{ once: true, amount: 0.2 }}
+						className="rounded-3xl border border-gray-200 bg-white p-10 text-left sm:text-center shadow-sm"
+					>
 						<img src="/financial.svg" alt="Financial Tools" className="h-24 w-24 object-contain sm:mx-auto" />
 						<h3 className="mt-6 font-sans text-2xl font-semibold text-[rgba(40,40,40,1)]">Financial Tools</h3>
 						<p className="mt-4 font-sans text-base font-normal leading-[150%] text-[rgba(136,136,136,1)]">
@@ -209,13 +241,17 @@ export default function Home() {
 						<div className="mt-6">
 							<Button variant="outline" className="!text-black !border-gray-300 hover:!bg-gray-100 hover:!text-black !bg-white">Detail Produk</Button>
 						</div>
-					</div>
+					</motion.div>
 				</div>
-				</section>
+			</section>
 
 			{/* CTA section */}
 			<section className="mt-[100px] px-4">
-				<div
+				<motion.div
+					initial={{ opacity: 0, scale: 0.95 }}
+					whileInView={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.6, ease: "easeOut" }}
+					viewport={{ once: true, amount: 0.2 }}
 					className="mx-auto max-w-6xl rounded-3xl px-6 py-6 text-left sm:text-center"
 					style={{ backgroundColor: "rgba(29, 152, 196, 1)" }}
 				>
@@ -237,7 +273,7 @@ export default function Home() {
 						<Button className="bg-white text-[rgba(29,152,196,1)] hover:bg-white/90">Hubungi Kami</Button>
 					</div>
 					<div className="pb-4 sm:pb-16" />
-			</div>
+			</motion.div>
 			</section>
 		</div>
 	);
