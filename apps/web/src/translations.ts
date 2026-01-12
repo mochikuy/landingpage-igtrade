@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       about: "Tentang Kami",
       products: "Produk Kami",
+      blog: "Blog",
       contact: "Hubungi Kami",
     },
     hero: {
@@ -84,6 +85,7 @@ export const translations = {
     nav: {
       about: "About Us",
       products: "Our Products",
+      blog: "Blog",
       contact: "Contact Us",
     },
     hero: {
@@ -165,6 +167,7 @@ export const translations = {
     nav: {
       about: "关于我们",
       products: "产品中心",
+      blog: "博客",
       contact: "联系我们",
     },
     hero: {

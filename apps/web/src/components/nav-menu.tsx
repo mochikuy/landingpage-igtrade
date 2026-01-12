@@ -97,6 +97,15 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu> & { isWhite
 
         <NavigationMenuItem>
           <Link
+            to="/blog"
+            className={linkStyles(pathname === '/blog' || pathname.startsWith('/blog/'))}
+          >
+            {t('nav.blog')}
+          </Link>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <Link
             to="/contact-us"
             className={linkStyles(pathname === '/contact-us')}
           >
