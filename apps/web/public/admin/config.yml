@@ -1,11 +1,14 @@
 # Decap CMS Configuration
-# Backend: Git Gateway (for Netlify deployment)
-# For local development, the test-repo backend will be used automatically
+# Backend: DecapBridge (replaces deprecated Netlify Identity)
+# Users can log in with email - no GitHub account required
 
-# PRODUCTION - Netlify Git Gateway (recommended)
+# PRODUCTION - DecapBridge Authentication
 backend:
-  name: git-gateway
+  name: github
+  repo: nitasTeam/landingpage-igtrade
   branch: main
+  base_url: https://api.decapbridge.com
+  auth_endpoint: auth
 
 # LOCAL DEVELOPMENT - automatically uses test-repo when running locally
 local_backend: true
