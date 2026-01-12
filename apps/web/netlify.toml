@@ -5,10 +5,19 @@
   publish = "build/client"
   functions = "build/server"
 
+
+# Serve admin files directly (for Decap CMS)
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 200
+
+# SPA fallback for all other routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 # Enable Netlify Identity for Decap CMS authentication
 [build.environment]
