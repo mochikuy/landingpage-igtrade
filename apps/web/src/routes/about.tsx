@@ -4,7 +4,7 @@ import { Link } from "react-router";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
 	return [
 		{ title: "Tentang Kami - Infinity Globalindo" },
 		{
@@ -19,20 +19,20 @@ export default function About() {
 		<div className="min-h-screen w-full bg-white">
 			{/* Hero Section */}
 			<section className="relative mx-4 my-12 rounded-3xl sm:mx-6 sm:p-16 lg:mx-8 text-left sm:text-center">
-                	<span className="inline-block px-4 py-1 text-sm font-medium uppercase" style={{
-						backgroundColor: 'rgba(245, 245, 245, 1)',
-						color: 'rgba(29, 152, 196, 1)'
-					}}>
-						Produk Kami
-					</span>
+				<span className="inline-block px-4 py-1 text-sm font-medium uppercase" style={{
+					backgroundColor: 'rgba(245, 245, 245, 1)',
+					color: 'rgba(29, 152, 196, 1)'
+				}}>
+					Produk Kami
+				</span>
 				<div className="max-w-4xl mx-auto mt-[24px]">
 					<h1 className="font-serif font-medium text-[28px] leading-[42px] sm:text-[32px] sm:leading-[48px] lg:text-[40px] lg:leading-[60px] tracking-[0px] text-[rgba(40,40,40,1)] mb-6">
 						Perdagangan Global, Kepercayaan Lokal
 					</h1>
 					<p className="font-sans font-normal sm:text-[16px] lg:text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)] mb-8">
-                    Sebagai pemimpin di industri impor-ekspor, dengan jaringan global yang luas dan tim profesional berpengalaman, 
-PT Infinity Globalindo Trade memahami pentingnya kualitas dan pengiriman tepat waktu. Oleh karena itu, kami berkomitmen untuk 
-menyediakan layanan impor-ekspor hardware terbaik.
+						Sebagai pemimpin di industri impor-ekspor, dengan jaringan global yang luas dan tim profesional berpengalaman,
+						PT Infinity Globalindo Trade memahami pentingnya kualitas dan pengiriman tepat waktu. Oleh karena itu, kami berkomitmen untuk
+						menyediakan layanan impor-ekspor hardware terbaik.
 					</p>
 				</div>
 			</section>
@@ -93,9 +93,9 @@ menyediakan layanan impor-ekspor hardware terbaik.
 				<div className="px-4 sm:px-8 md:px-16 lg:px-28">
 					<Separator className="bg-gray-200" />
 				</div>
-				
+
 				<div className="max-w-6xl mx-auto text-left sm:text-center mt-16">
-				<h1 className="font-serif font-medium text-[28px] leading-[42px] sm:text-[32px] sm:leading-[48px] lg:text-[40px] lg:leading-[60px] tracking-[0px] text-[rgba(40,40,40,1)] mb-6">
+					<h1 className="font-serif font-medium text-[28px] leading-[42px] sm:text-[32px] sm:leading-[48px] lg:text-[40px] lg:leading-[60px] tracking-[0px] text-[rgba(40,40,40,1)] mb-6">
 						Nilai yang Kami Pegang
 					</h1>
 					<div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -112,7 +112,7 @@ menyediakan layanan impor-ekspor hardware terbaik.
 								Integritas
 							</h3>
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
-                                Membangun kepercayaan, kejujuran dan transparansi
+								Membangun kepercayaan, kejujuran dan transparansi
 							</p>
 						</motion.div>
 
@@ -129,7 +129,7 @@ menyediakan layanan impor-ekspor hardware terbaik.
 								Efisiensi
 							</h3>
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
-                                Proses pengiriman yang tepat waktu dan setiap waktu.
+								Proses pengiriman yang tepat waktu dan setiap waktu.
 							</p>
 						</motion.div>
 
@@ -146,7 +146,7 @@ menyediakan layanan impor-ekspor hardware terbaik.
 								Inovasi
 							</h3>
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
-                                Terus berkembang untuk memenuhi standar global.
+								Terus berkembang untuk memenuhi standar global.
 							</p>
 						</motion.div>
 
@@ -163,7 +163,7 @@ menyediakan layanan impor-ekspor hardware terbaik.
 								Kemitraan
 							</h3>
 							<p className="font-sans font-normal text-[18px] leading-[150%] tracking-[0px] text-[rgba(136,136,136,1)]">
-                                Sukses melalui kolaborasi dan pertumbuhan bersama.
+								Sukses melalui kolaborasi dan pertumbuhan bersama.
 							</p>
 						</motion.div>
 					</div>
@@ -175,8 +175,8 @@ menyediakan layanan impor-ekspor hardware terbaik.
 			</section>
 
 			{/* CTA Section */}
-			<section className="mt-[100px] px-4">
-                <motion.div
+			<section className="py-24 px-4">
+				<motion.div
 					initial={{ opacity: 0, scale: 0.95 }}
 					whileInView={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
@@ -195,8 +195,8 @@ menyediakan layanan impor-ekspor hardware terbaik.
 						Mari Bangun Koneksi Global Bersama
 					</h2>
 					<p className="mt-6 font-sans font-normal text-[16px] sm:text-[18px] leading-[150%] tracking-[0px] text-white">
-                        Dari komponen industri hingga perlengkapan olahraga dan keamanan — 
-                        setiap produk kami pastikan memenuhi standar internasional.
+						Dari komponen industri hingga perlengkapan olahraga dan keamanan —
+						setiap produk kami pastikan memenuhi standar internasional.
 					</p>
 					<div className="mt-10">
 						<a
