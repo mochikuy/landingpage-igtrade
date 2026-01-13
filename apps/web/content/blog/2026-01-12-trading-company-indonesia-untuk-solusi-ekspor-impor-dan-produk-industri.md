@@ -2,6 +2,7 @@
 title: Trading Company Indonesia untuk Solusi Ekspor, Impor, dan Produk Industri 
 date: 2026-01-12T21:18:00.000+07:00
 description: ""
+image: https://news.uchicago.edu/sites/default/files/styles/gallery/public/images/2022-04/supply-chains-illustration.jpg?h=944f5cba&itok=sOfGZPTy
 author: Infinity Globalindo
 ---
 # IGTrade
